@@ -15,20 +15,20 @@ This is a simple custom select box creation function using jQuery.
 ```javascript
     $(selector).createSelectBox(apiUrl, pageSize, dataText, inputName, onSelect);
 ```
-`selector`: A string representing the HTML element where you want to place the custom select box.
-`apiUrl`: The URL of the API from which you want to retrieve data. This API should support the pageNo, pageRecord, and keyword parameters for pagination and data searching.
-`pageSize`: The number of options to display per page.
-`dataText`: The name of the property in the API options object to display as text in the options.
-`inputName`: The name attribute for the input field within the custom select box.
-`onSelect`: A callback function that is called when an option is selected. It receives the selected option value as an argument.
+`selector`: A string representing the HTML element where you want to place the custom select box. </br>
+`apiUrl`: The URL of the API from which you want to retrieve data. This API should support the pageNo, pageRecord, and keyword parameters for pagination and data searching.</br>
+`pageSize`: The number of options to display per page.</br>
+`dataText`: The name of the property in the API options object to display as text in the options.</br>
+`inputName`: The name attribute for the input field within the custom select box.</br>
+`onSelect`: A callback function that is called when an option is selected. It receives the selected option value as an argument.</br>
 ##
-4. Use the getSelected method to retrieve the value of the selected option:
+# 4. Use the getSelected method to retrieve the value of the selected option:
 ```javascript
 let selectedValue = $(selector).getSelected();
 ```
 `selectedValue` will contain an object with two properties: value (the value of the selected option) and text (the text displayed on the input field).
 
-5 Use the `setData` method to set data for the input field within the custom select box:
+# 5. Use the `setData` method to set data for the input field within the custom select box:
 ```javascript
 $(selector).setData(data);
 ```
