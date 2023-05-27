@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <link rel="stylesheet" href="./select-input.css">
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="./select-input.js"></script>
+</head>
+
+<body>
+    <div class="custom-select-input" id="demo">
+    </div>
+</body>
+
+<script>
+    $(document).ready(function() {
+        $('#demo').createSelectBox("/api-demo", 20, "contractId", "contractId", function(dataSelect) { //Sửa lại cho từng dự án
+            let obj = dataSelect;
+            document.getElementById("custName").value = obj.custName;
+        });
+    });
+</script>
