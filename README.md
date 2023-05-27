@@ -1,7 +1,10 @@
 # Select Box Auto-create Function
 
 This is a simple custom select box creation function using jQuery.
-
+To using
+Clone code 
+``` https://github.com/trikhanhhk/select-input-data.git ```
+and then copy file `select-input.css` and `select-input.js` to your project
 ## Usage
 
 1. Include the jQuery library in your web page (if not already included):
